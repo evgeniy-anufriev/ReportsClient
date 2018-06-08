@@ -1,0 +1,22 @@
+﻿<Window x:Class="ReportsClient.PeriodReportSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReportsClient"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="PeriodReportSelect" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <DatePicker x:Name="DAteTo" HorizontalAlignment="Left" Margin="84,73,0,0" VerticalAlignment="Top" FirstDayOfWeek="Monday" Height="22" Width="102"/>
+        <DatePicker x:Name="DateFrom" HorizontalAlignment="Left" Margin="84,38,0,0" VerticalAlignment="Top" FirstDayOfWeek="Monday" Height="22" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="17,38,0,0" TextWrapping="Wrap" Text="Дата с" VerticalAlignment="Top" Width="67"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="17,73,0,0" TextWrapping="Wrap" Text="Дата по" VerticalAlignment="Top" Width="67"/>
+        <xctk:TimePicker x:Name="TimeFrom" Margin="206,38,440,352" Format="LongTime" CultureInfo="ru-RU" Kind="Local" MaxDropDownHeight="129" AllowSpin="False" DisplayDefaultValueOnEmptyText="True" DefaultValue="2018-05-26"/>
+        <xctk:TimePicker x:Name="TimeTo" Margin="206,68,440,322" Format="LongTime" CultureInfo="ru-RU" Kind="Local" MaxDropDownHeight="129" AllowSpin="False" DisplayDefaultValueOnEmptyText="True" DefaultValue="05/26/2018 23:59:59"/>
+    </Grid>
+</Window>
